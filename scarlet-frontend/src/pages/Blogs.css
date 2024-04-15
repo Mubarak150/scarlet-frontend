@@ -1,0 +1,149 @@
+body {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-family: Montserrat;
+}
+
+.padded {
+    padding: 20px 79px;
+    font-family: Inter, Montserrat;
+}
+
+/* ///////////////// NAV BAR //////////////////// */
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.navbar-component {
+    text-decoration: none;
+    color: #000000D4;
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26.1px;
+    text-align: left;
+}
+
+.navbar-component:hover {
+    color: #EC3F25;
+}
+
+.navbar-button {
+    justify-self: flex-end;
+}
+
+/* /////////////////////////////// BLOG COMPONENT ////////////////////// */
+
+.time-stamp {
+    
+/* font-family: Inter; */
+font-size: 14px;
+font-weight: 600;
+line-height: 20px;
+text-align: left;
+color: #EE2E24;
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw;
+    overflow: hidden;
+    padding-top: 30px;
+}
+.blog-content {
+
+font-size: 16px;
+padding-top: 14px;
+font-weight: 400;
+line-height: 16px;
+text-align: justify;
+color: #667085;
+}
+
+.blog-title {
+font-size: 24px;
+font-weight: 600;
+text-align: left;
+line-height: 20px;
+padding: 6px 0; 
+color: #1A1A1A;
+}
+
+.wrap-in-blog {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20px;
+}
+
+.order-3 {
+    order: 1;
+    padding-top: 24px;
+}
+
+
+/* ////////////////////// BLOG GRID //////////////////// */
+.blog-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: first baseline;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+/* ///////////////////////////////////////// */
+
+.contents-main-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 20px;
+    /* row-gap: 30px; */
+}
+
+
+.blog-content-p {
+    padding: 20px 0;
+    /* padding-bottom: 20px; */
+} 
+
+.related-head {
+font-size: 24px;
+font-weight: 600;
+line-height: 24px;
+text-align: left;
+margin-top: 24px;
+
+}
+
+.related-blog {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 8px;
+    height: 159px; 
+    /* overflow: hidden; */
+
+}
+
+.related-image {
+    height: 159px;
+    width: 192px;
+    object-fit: cover;
+    grid-row: 1 / span 3; 
+}
+
+.sub-heading {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #1A1A1A;
+    padding-bottom: 4px;
+    padding-top: 20px;
+}
